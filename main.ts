@@ -78,7 +78,6 @@ export async function copyModules({ packages, src, dest, symlink }: Options) {
       fs.ensureSymlink(fullSrcPath, fullDstPath, "dir");
     }
   });
-  // TODO
 }
 
 export default function rollupNodeCopyPlugin({ packages, src, dest, clean = true, symlink = false }: Options) {
